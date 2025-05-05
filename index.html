@@ -1,1 +1,26 @@
-<h1>Hello world!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OnionVault</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>OnionVault</h1>
+
+  <input type="password" id="masterPassword" placeholder="Master Password" />
+  <button onclick="loadVault()">Unlock</button>
+
+  <div id="vault" style="display:none;">
+    <h2>Your Vault</h2>
+    <ul id="entries"></ul>
+    <input id="site" placeholder="Site">
+    <input id="username" placeholder="Username">
+    <input id="password" placeholder="Password">
+    <button onclick="addEntry()">Add Entry</button>
+    <button onclick="downloadVault()">Download Encrypted Vault</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
