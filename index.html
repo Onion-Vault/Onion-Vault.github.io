@@ -8,8 +8,11 @@
 <body>
   <h1>OnionVault</h1>
 
-  <input type="password" id="masterPassword" placeholder="Master Password" />
-  <button onclick="loadVault()">Unlock</button>
+  <div id="login">
+    <input type="password" id="masterPassword" placeholder="Enter Master Password" />
+    <button onclick="loadVault()">Unlock</button>
+    <p id="status"></p>
+  </div>
 
   <div id="vault" style="display:none;">
     <h2>Your Vault</h2>
@@ -19,6 +22,7 @@
     <input id="password" placeholder="Password">
     <button onclick="addEntry()">Add Entry</button>
     <button onclick="downloadVault()">Download Encrypted Vault</button>
+    <button onclick="logout()">Log Out</button>
   </div>
 
   <script src="app.js"></script>
