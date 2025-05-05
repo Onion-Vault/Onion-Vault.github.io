@@ -2,27 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>OnionVault</title>
+  <title>Onion-Vault</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>OnionVault</h1>
+  <div id="container">
+    <h1>Onion-Vault</h1>
 
-  <div id="login">
-    <input type="password" id="masterPassword" placeholder="Enter Master Password" />
-    <button onclick="loadVault()">Unlock</button>
-    <p id="status"></p>
-  </div>
+    <div id="login">
+      <input type="password" id="masterPassword" placeholder="Enter Master Password" />
+      <button onclick="loadVault()">Unlock</button>
+      <p id="status"></p>
+    </div>
 
-  <div id="vault" style="display:none;">
-    <h2>Your Vault</h2>
-    <ul id="entries"></ul>
-    <input id="site" placeholder="Site">
-    <input id="username" placeholder="Username">
-    <input id="password" placeholder="Password">
-    <button onclick="addEntry()">Add Entry</button>
-    <button onclick="downloadVault()">Download Encrypted Vault</button>
-    <button onclick="logout()">Log Out</button>
+    <div id="vault" style="display:none;">
+      <h2>Your Vault</h2>
+      <ul id="entries"></ul>
+      <input id="site" placeholder="Site">
+      <input id="username" placeholder="Username">
+      <input id="password" placeholder="Password">
+      <button onclick="addEntry()">Add Entry</button>
+      <button onclick="downloadVault()">Download Vault</button>
+      <button onclick="logout()">Log Out</button>
+    </div>
   </div>
 
   <script src="app.js"></script>
